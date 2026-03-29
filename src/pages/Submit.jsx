@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle, ExternalLink, Info, FileText, ChevronRight, Mail } from 'lucide-react';
-
 // ── EMAILJS CONFIG ─────────────────────────────────────────────────
+
+
 // Get these from https://emailjs.com (see README for step-by-step)
 const EMAILJS_SERVICE_ID  = 'service_jvk9ud3';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'template_xmu9jul';  // e.g. 'template_xyz789'
+const EMAILJS_TEMPLATE_ID = 'template_5r67mmm';  // e.g. 'template_xyz789'
 const EMAILJS_PUBLIC_KEY  = 'FCl0hSAy3uCOx0Xk-';   // e.g. 'user_XXXXXXXXXXXXXX'
 // ──────────────────────────────────────────────────────────────────
-
 // Google Form embed URL
 const GOOGLE_FORM_EMBED  = 'https://docs.google.com/forms/d/e/1FAIpQLSe3I9UxHME0HRxBDemJSp3BOA2qyVR4cURpco1uJdebubu6og/viewform?embedded=true';
 const GOOGLE_FORM_DIRECT = 'https://docs.google.com/forms/d/e/1FAIpQLSe3I9UxHME0HRxBDemJSp3BOA2qyVR4cURpco1uJdebubu6og/viewform';
-
+ 
 export default function Submit() {
   const [step, setStep] = useState(1);
   const [form, setForm] = useState({ name: '', email: '' });
   const [emailStatus, setEmailStatus] = useState('idle'); // idle | sending | sent | error
   const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
-
+ 
   const sendConfirmationEmail = async () => {
     if (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID') return; // not configured yet
     try {
@@ -26,11 +26,17 @@ export default function Submit() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          to_name: form.name,
-          to_email: form.email,
-          author_name: form.name,
+          to_name:         form.name,
+          to_email:        form.email,
+          author_name:     form.name,
+          author_email:    form.email,
           submission_date: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }),
           conference_date: 'April 10, 2026',
+          form_link:       'https://docs.google.com/forms/d/e/1FAIpQLSe3I9UxHME0HRxBDemJSp3BOA2qyVR4cURpco1uJdebubu6og/viewform',
+          template_link:   'https://rebrand.ly/11tcryj',
+          contact_email:   'acsis2k26@aliet.ac.in',
+          contact_phone1:  '99592 34233 (Dr. K. Venkateswara Rao)',
+          contact_phone2:  '83749 70121 (Mr. V.V.R Manoj)',
         },
         EMAILJS_PUBLIC_KEY
       );
@@ -39,7 +45,7 @@ export default function Submit() {
       setEmailStatus('error');
     }
   };
-
+ 
   const handleProceed = async (e) => {
     e.preventDefault();
     if (!form.name || !form.email) return;
@@ -50,7 +56,7 @@ export default function Submit() {
       document.getElementById('form-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300);
   };
-
+ 
   const inp = {
     width: '100%', padding: '11px 14px',
     background: 'rgba(255,255,255,0.05)',
@@ -59,10 +65,10 @@ export default function Submit() {
     fontSize: '14px', fontFamily: "'Space Grotesk', sans-serif",
     outline: 'none', boxSizing: 'border-box', transition: 'border-color 0.2s',
   };
-
+ 
   return (
     <div style={{ paddingTop: '64px', background: '#0a0a14', minHeight: '100vh' }}>
-
+ 
       {/* HEADER */}
       <div style={{ background: 'linear-gradient(135deg,#0f0f20,#1a0a2e)', padding: '4rem 1.25rem 2.5rem', textAlign: 'center', borderBottom: '1px solid rgba(108,99,255,0.2)' }}>
         <div style={{ display: 'inline-block', padding: '4px 14px', background: 'rgba(108,99,255,0.15)', border: '1px solid rgba(108,99,255,0.3)', borderRadius: '100px', fontSize: '11px', color: '#6c63ff', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '1rem' }}>
@@ -75,9 +81,9 @@ export default function Submit() {
           Enter your details to get a confirmation email, then fill the Google Form below to upload your Word document.
         </p>
       </div>
-
+ 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '2.5rem 1.25rem' }}>
-
+ 
         {/* PROGRESS STEPS */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '10px', marginBottom: '2.5rem' }}>
           {[
@@ -93,7 +99,7 @@ export default function Submit() {
             </div>
           ))}
         </div>
-
+ 
         {/* ══ STEP 1 ══ */}
         {step === 1 && (
           <>
@@ -110,11 +116,11 @@ export default function Submit() {
                 </ol>
               </div>
             </div>
-
+ 
             <form onSubmit={handleProceed}>
               <div style={{ background: 'linear-gradient(135deg,#12121f,#1a1a2e)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: '16px', padding: '2rem', display: 'grid', gap: '1.25rem' }}>
                 <h3 style={{ color: '#e2e8f0', fontWeight: 700, fontSize: '16px' }}>Step 1 — Enter Your Details</h3>
-
+ 
                 <div>
                   <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#94a3b8', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     Author Name <span style={{ color: '#ff6b9d' }}>*</span>
@@ -125,7 +131,7 @@ export default function Submit() {
                     onBlur={e => e.target.style.borderColor='rgba(108,99,255,0.25)'}
                     required autoComplete="name" />
                 </div>
-
+ 
                 <div>
                   <label style={{ display: 'block', fontSize: '12px', fontWeight: 600, color: '#94a3b8', marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                     Email Address <span style={{ color: '#ff6b9d' }}>*</span>
@@ -137,11 +143,11 @@ export default function Submit() {
                     required autoComplete="email" />
                   <p style={{ fontSize: '12px', color: '#475569', marginTop: '5px' }}>📧 A confirmation email will be sent here</p>
                 </div>
-
+ 
                 <div style={{ background: 'rgba(245,200,66,0.07)', border: '1px solid rgba(245,200,66,0.2)', borderRadius: '10px', padding: '10px 14px', fontSize: '12px', color: '#f5c842' }}>
                   ⚠️ Deadline: <strong>April 2, 2026</strong> · Upload format: <strong>Word (.doc / .docx)</strong> · Max 100 MB
                 </div>
-
+ 
                 <button type="submit" disabled={emailStatus === 'sending'} style={{
                   padding: '13px', background: emailStatus === 'sending' ? 'rgba(108,99,255,0.5)' : 'linear-gradient(135deg,#6c63ff,#a855f7)',
                   color: '#fff', border: 'none', borderRadius: '11px', fontSize: '15px', fontWeight: 700,
@@ -156,7 +162,7 @@ export default function Submit() {
                 </button>
               </div>
             </form>
-
+ 
             {/* Template download */}
             <div style={{ marginTop: '1.5rem', background: 'rgba(0,212,170,0.05)', border: '1px solid rgba(0,212,170,0.18)', borderRadius: '12px', padding: '1rem 1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
@@ -170,11 +176,11 @@ export default function Submit() {
             </div>
           </>
         )}
-
+ 
         {/* ══ STEP 2: Embedded Google Form ══ */}
         {step === 2 && (
           <div id="form-section">
-
+ 
             {/* Email status banner */}
             <div style={{ marginBottom: '1.5rem', background: emailStatus === 'error' ? 'rgba(255,107,157,0.08)' : 'rgba(34,197,94,0.08)', border: `1px solid ${emailStatus==='error' ? 'rgba(255,107,157,0.3)' : 'rgba(34,197,94,0.3)'}`, borderRadius: '12px', padding: '1rem 1.25rem', display: 'flex', gap: '10px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
               {emailStatus === 'error'
@@ -192,7 +198,7 @@ export default function Submit() {
                 </p>
               </div>
             </div>
-
+ 
             {/* Quick tips */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(170px,1fr))', gap: '10px', marginBottom: '1.5rem' }}>
               {[
@@ -207,7 +213,7 @@ export default function Submit() {
                 </div>
               ))}
             </div>
-
+ 
             {/* ── EMBEDDED GOOGLE FORM ── */}
             <div style={{ background:'linear-gradient(135deg,#12121f,#1a1a2e)', border:'1px solid rgba(108,99,255,0.25)', borderRadius:'16px', overflow:'hidden' }}>
               {/* Form header */}
@@ -218,7 +224,7 @@ export default function Submit() {
                   <p style={{ color:'rgba(255,255,255,0.7)', fontSize:'11px' }}>Fill all fields · Upload your Word document · Click Submit</p>
                 </div>
               </div>
-
+ 
               {/* IFRAME — Google Form embedded */}
               <iframe
                 src={GOOGLE_FORM_EMBED}
@@ -234,7 +240,7 @@ export default function Submit() {
                 Loading…
               </iframe>
             </div>
-
+ 
             {/* Fallback + back */}
             <div style={{ marginTop:'1.25rem', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:'10px' }}>
               <button onClick={() => { setStep(1); setEmailStatus('idle'); }}
@@ -246,12 +252,12 @@ export default function Submit() {
                 Form not loading? Open directly <ExternalLink size={12}/>
               </a>
             </div>
-
+ 
             <div style={{ marginBottom:'3rem' }} />
           </div>
         )}
       </div>
-
+ 
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
   );
