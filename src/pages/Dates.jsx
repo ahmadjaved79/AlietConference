@@ -2,10 +2,10 @@
 import { Clock, CheckCircle, AlertTriangle } from 'lucide-react';
 
 const DATES = [
-  { label: 'Paper Submission Starts', date: 'March 29, 2026', icon: '🟢', color: '#22c55e', status: 'open' },
-  { label: 'Paper Submission Closes', date: 'April 2, 2026', icon: '🔴', color: '#ff6b9d', status: 'deadline' },
-  { label: 'Notification of Acceptance', date: 'April 4, 2026', icon: '📧', color: '#6c63ff', status: 'upcoming' },
-  { label: 'Registration of Accepted Paper', date: 'April 6, 2026', icon: '✅', color: '#f5c842', status: 'upcoming' },
+  { label: 'Paper Submission Starts', date: 'March 30, 2026', icon: '🟢', color: '#22c55e', status: 'open' },
+  { label: 'Paper Submission Closes', date: 'April 4, 2026', icon: '🔴', color: '#ff6b9d', status: 'deadline' },
+  { label: 'Notification of Acceptance', date: 'April 6, 2026', icon: '📧', color: '#6c63ff', status: 'upcoming' },
+  { label: 'Registration of Accepted Paper', date: 'April 8, 2026', icon: '✅', color: '#f5c842', status: 'upcoming' },
   { label: 'Conference Day', date: 'April 10, 2026', icon: '🎓', color: '#a855f7', status: 'conference' },
 ];
 
