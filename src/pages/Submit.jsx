@@ -36,7 +36,7 @@ export default function Submit() {
           template_link:   'https://rebrand.ly/11tcryj',
           contact_email:   'acsis2k26@aliet.ac.in',
           contact_phone1:  '99592 34233 (Dr. K. Venkateswara Rao)',
-          contact_phone2:  '83749 70121 (Mr. V.V.R Manoj)',
+          contact_phone2:  '99089 89456 (Mr. V.V.R Manoj)',
         },
         EMAILJS_PUBLIC_KEY
       );
