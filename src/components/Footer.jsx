@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
               <div style={{ width: '38px', height: '38px', borderRadius: '10px', background: 'linear-gradient(135deg, #6c63ff, #a855f7)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '14px', color: '#fff' }}>AC</div>
-              <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '18px', color: '#fff' }}>ACSIS-2026</span>
+              <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '18px', color: '#fff' }}>ICACSIS-2026</span>
             </div>
             <p style={{ fontSize: '13px', color: '#64748b', lineHeight: 1.7, marginBottom: '1rem' }}>
               International Conference on Advances in Computer Science and Interdisciplinary Systems
