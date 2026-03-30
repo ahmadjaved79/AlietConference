@@ -145,7 +145,7 @@ export default function Submit() {
                 </div>
  
                 <div style={{ background: 'rgba(245,200,66,0.07)', border: '1px solid rgba(245,200,66,0.2)', borderRadius: '10px', padding: '10px 14px', fontSize: '12px', color: '#f5c842' }}>
-                  ⚠️ Deadline: <strong>April 2, 2026</strong> · Upload format: <strong>Word (.doc / .docx)</strong> · Max 100 MB
+                  ⚠️ Deadline: <strong>April 4, 2026</strong> · Upload format: <strong>Word (.doc / .docx)</strong> · Max 100 MB
                 </div>
  
                 <button type="submit" disabled={emailStatus === 'sending'} style={{
