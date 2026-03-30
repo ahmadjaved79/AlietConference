@@ -87,7 +87,7 @@ export default function Home() {
 
           {/* Main title */}
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(36px, 8vw, 72px)', fontWeight: 700, color: '#fff', lineHeight: 1.1, marginBottom: '0.5rem' }}>
-            ACSIS<span style={{ color: '#6c63ff' }}>-2026</span>
+            ICACSIS<span style={{ color: '#6c63ff' }}>-2026</span>
           </h1>
           <p style={{ fontSize: 'clamp(13px, 2.5vw, 17px)', color: '#a5b4fc', fontWeight: 500, marginBottom: '0.75rem', fontStyle: 'italic' }}>
             Advances in Computer Science and Interdisciplinary Systems
