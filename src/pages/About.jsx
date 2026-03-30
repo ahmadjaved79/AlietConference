@@ -7,7 +7,7 @@ export function About() {
   return (
     <div style={{ paddingTop: '64px', background: '#0a0a14', minHeight: '100vh' }}>
       <div style={{ background: 'linear-gradient(135deg, #0f0f20, #1a0a2e)', padding: '4rem 1.25rem 3rem', textAlign: 'center', borderBottom: '1px solid rgba(108,99,255,0.2)' }}>
-        <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(26px,6vw,42px)', color: '#fff', fontWeight: 700, marginBottom: '0.75rem' }}>About ACSIS-2026</h1>
+        <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(26px,6vw,42px)', color: '#fff', fontWeight: 700, marginBottom: '0.75rem' }}>About ICACSIS-2026</h1>
         <p style={{ color: '#64748b', fontSize: '15px', maxWidth: '600px', margin: '0 auto' }}>International Conference on Advances in Computer Science and Interdisciplinary Systems</p>
       </div>
 
