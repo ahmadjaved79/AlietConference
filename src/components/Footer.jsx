@@ -56,9 +56,6 @@ export default function Footer() {
               <ExternalLink size={13} /> Download Template
             </a>
             <br />
-            <a href="https://cmt3.research.microsoft.com/user/login?ReturnURL=%2FICATES2025" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 16px', background: 'rgba(0,212,170,0.1)', border: '1px solid rgba(0,212,170,0.3)', borderRadius: '8px', color: '#00d4aa', fontSize: '13px', fontWeight: 600, textDecoration: 'none', marginTop: '6px' }}>
-              <ExternalLink size={13} /> Submit via CMT
-            </a>
           </div>
         </div>
 
