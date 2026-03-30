@@ -8,14 +8,9 @@ const COMMITTEE = {
   ],
   advisory: [
     { name: 'Dr. Siva Rama Krishna Rudrubati', role: 'Mediatek Wireless Ltd, Cambridge, UK' },
-    { name: 'Mr. V. Vidyasagar', role: 'HOD – IT' },
-    { name: 'Dr. K. Siva Ramakrishna', role: 'HOD – AIML' },
-    { name: 'Dr. T. Lakshmi Narayana', role: 'HOD – ECE' },
-    { name: 'Dr. G. Naveen Kumar', role: 'HOD – EEE' },
-    { name: 'Dr. M. Geeta Rani', role: 'HOD – MECH' },
-    { name: 'Mr. Ch. Nagaraju', role: 'HOD – CIVIL' },
-    { name: 'Dr. Y. Sudhakar', role: 'HOD – S&H' },
-    { name: 'Dr. M. Vijay Kumar', role: 'HOD – MBA' },
+    { name: 'Mr.Venu Bandi', role: 'MS in DataScience' },
+    { name: 'Mr. V. Vidyasagar', role: ' HOD – IT' },
+    { name: 'Dr.K.SivaRamakrishna', role: 'HOD – AIML/DS' },
   ],
   conveners: [
     { name: 'Dr. L. Kanya Kumari', role: 'Convener' },
@@ -74,7 +69,7 @@ export default function Committee() {
     <div style={{ paddingTop: '64px', background: '#0a0a14', minHeight: '100vh' }}>
       <div style={{ background: 'linear-gradient(135deg, #0f0f20, #1a0a2e)', padding: '4rem 1.25rem 3rem', textAlign: 'center', borderBottom: '1px solid rgba(108,99,255,0.2)' }}>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(26px,6vw,42px)', color: '#fff', fontWeight: 700, marginBottom: '0.75rem' }}>Organizing Committee</h1>
-        <p style={{ color: '#64748b', fontSize: '15px' }}>The distinguished team behind ACSIS-2026</p>
+        <p style={{ color: '#64748b', fontSize: '15px' }}>The distinguished team behind ICACSIS-2026</p>
       </div>
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '3rem 1.25rem' }}>
         <Section title="Chief Patron" people={COMMITTEE.chiefPatron} big color="#f5c842" />

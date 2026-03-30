@@ -71,9 +71,6 @@ export function Publications() {
             <a href="https://rebrand.ly/11tcryj" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '10px 20px', background: 'rgba(0,212,170,0.15)', border: '1px solid rgba(0,212,170,0.3)', borderRadius: '8px', color: '#00d4aa', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>
               <ExternalLink size={14} /> Download Template
             </a>
-            <a href="https://cmt3.research.microsoft.com/user/login?ReturnURL=%2FICATES2025" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '10px 20px', background: 'rgba(108,99,255,0.15)', border: '1px solid rgba(108,99,255,0.3)', borderRadius: '8px', color: '#6c63ff', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>
-              <ExternalLink size={14} /> Submit via CMT
-            </a>
           </div>
         </div>
 

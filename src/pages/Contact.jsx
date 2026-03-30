@@ -37,7 +37,7 @@ export default function Contact() {
             {[
               { icon: <Mail size={18} />, label: 'Email', val: 'acsis2k26@aliet.ac.in', href: 'mailto:acsis2k26@aliet.ac.in', color: '#6c63ff' },
               { icon: <Phone size={18} />, label: 'Dr. K. Venkateswara Rao', val: '99592 34233', href: 'tel:+919959234233', color: '#00d4aa' },
-              { icon: <Phone size={18} />, label: 'Mr. V.V.R Manoj', val: '83749 70121', href: 'tel:+918374970121', color: '#00d4aa' },
+              { icon: <Phone size={18} />, label: 'Mr. V.V.R Manoj', val: '99089 89456', href: 'tel:+918374970121', color: '#00d4aa' },
               { icon: <MapPin size={18} />, label: 'Venue', val: 'Andhra Loyola Institute of Engineering and Technology (Autonomous), Vijayawada – 520008, Andhra Pradesh', color: '#f5c842' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start', background: 'linear-gradient(135deg, #12121f, #1a1a2e)', border: '1px solid rgba(108,99,255,0.15)', borderRadius: '12px', padding: '1rem' }}>
