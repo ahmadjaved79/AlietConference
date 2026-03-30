@@ -16,7 +16,7 @@ export function About() {
         <div style={{ background: 'linear-gradient(135deg, #12121f, #1a1a2e)', border: '1px solid rgba(108,99,255,0.2)', borderRadius: '16px', padding: '2rem' }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', fontSize: '22px', marginBottom: '1rem' }}>Conference Overview</h2>
           <p style={{ color: '#94a3b8', lineHeight: 1.8, fontSize: '15px', marginBottom: '1rem' }}>
-            ACSIS-2026 is a premier international conference hosted by the <strong style={{ color: '#e2e8f0' }}>Department of Computer Science & Engineering</strong> in association with the <strong style={{ color: '#e2e8f0' }}>Journal of Computer and Electrical Sciences (JCES)</strong> at Andhra Loyola Institute of Engineering and Technology (Autonomous), Vijayawada.
+            ICACSIS-2026 is a premier international conference hosted by the <strong style={{ color: '#e2e8f0' }}>Department of Computer Science & Engineering</strong> in association with the <strong style={{ color: '#e2e8f0' }}>Journal of Computer and Electrical Sciences (JCES)</strong> at Andhra Loyola Institute of Engineering and Technology (Autonomous), Vijayawada.
           </p>
           <p style={{ color: '#94a3b8', lineHeight: 1.8, fontSize: '15px', marginBottom: '1rem' }}>
             The conference brings together researchers, engineers, academicians, and industry professionals from around the world to present and discuss the latest advancements in computer science, engineering, and interdisciplinary systems.
