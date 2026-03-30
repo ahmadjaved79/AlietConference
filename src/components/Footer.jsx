@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                 <Phone size={14} style={{ color: '#6c63ff', flexShrink: 0 }} />
-                <span style={{ fontSize: '13px', color: '#64748b' }}>Mr. V.V.R Manoj: 83749 70121</span>
+                <span style={{ fontSize: '13px', color: '#64748b' }}>Mr. V.V.R Manoj: 99089 89456</span>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(108,99,255,0.1)', padding: '1.5rem 0', textAlign: 'center' }}>
-          <p style={{ fontSize: '12px', color: '#334155' }}>© 2026 ACSIS-2026 · Andhra Loyola Institute of Engineering and Technology · Vijayawada, Andhra Pradesh</p>
+          <p style={{ fontSize: '12px', color: '#334155' }}>© 2026 ICACSIS-2026 · Andhra Loyola Institute of Engineering and Technology · Vijayawada, Andhra Pradesh</p>
           <p style={{ fontSize: '11px', color: '#1e293b', marginTop: '4px' }}>Approved by AICTE · Recognized by Govt of AP · Affiliated to JNTUK-Kakinada · ISO 9001:2015 Certified</p>
         </div>
       </div>
