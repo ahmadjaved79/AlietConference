@@ -2,7 +2,7 @@ import { Download, ZoomIn, X } from 'lucide-react';
 import { useState } from 'react';
 
 const brochures = [
-  { src: '/brochures/brochure1.jpeg', title: 'ACSIS-2026 Brochure — Version 1', desc: 'Conference overview with tracks, dates, committee and submission details' }
+  { src: '/brochures/brochure1.jpeg', title: 'ICACSIS-2026 Brochure — Version 1', desc: 'Conference overview with tracks, dates, committee and submission details' }
 ];
 
 export default function Brochure() {
