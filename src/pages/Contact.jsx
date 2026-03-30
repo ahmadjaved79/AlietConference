@@ -25,7 +25,7 @@ export default function Contact() {
     <div style={{ paddingTop: '64px', background: '#0a0a14', minHeight: '100vh' }}>
       <div style={{ background: 'linear-gradient(135deg, #0f0f20, #1a0a2e)', padding: '4rem 1.25rem 3rem', textAlign: 'center', borderBottom: '1px solid rgba(108,99,255,0.2)' }}>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(26px,6vw,42px)', color: '#fff', fontWeight: 700, marginBottom: '0.75rem' }}>Contact Us</h1>
-        <p style={{ color: '#64748b', fontSize: '15px' }}>Get in touch with the ACSIS-2026 organizing committee</p>
+        <p style={{ color: '#64748b', fontSize: '15px' }}>Get in touch with the ICACSIS-2026 organizing committee</p>
       </div>
 
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '3rem 1.25rem' }}>
