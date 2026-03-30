@@ -14,10 +14,10 @@ const TRACKS = [
 ];
 
 const DATES = [
-  { label: 'Submission Opens', date: 'March 29, 2026', done: true },
-  { label: 'Submission Closes', date: 'April 2, 2026', done: false },
-  { label: 'Notification of Acceptance', date: 'April 4, 2026', done: false },
-  { label: 'Registration of Accepted Paper', date: 'April 6, 2026', done: false },
+  { label: 'Submission Opens', date: 'March 30, 2026', done: true },
+  { label: 'Submission Closes', date: 'April 4, 2026', done: false },
+  { label: 'Notification of Acceptance', date: 'April 6, 2026', done: false },
+  { label: 'Registration of Accepted Paper', date: 'April 8, 2026', done: false },
   { label: 'Conference Day', date: 'April 10, 2026', done: false },
 ];
 
@@ -136,7 +136,7 @@ export default function Home() {
             ['8+', 'Research Tracks'],
             ['JCES', 'Peer Reviewed Publication'],
             ['Apr 10', '2026 Conference Day'],
-            ['Apr 2', 'Submission Deadline'],
+            ['Apr 4', 'Submission Deadline'],
           ].map(([val, label]) => (
             <div key={label} className="reveal">
               <div style={{ fontSize: 'clamp(20px,4vw,28px)', fontWeight: 800, color: '#6c63ff', fontFamily: "'Playfair Display', serif" }}>{val}</div>
