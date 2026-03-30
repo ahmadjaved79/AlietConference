@@ -42,7 +42,7 @@ export default function Navbar() {
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
           <div style={{ width: '38px', height: '38px', borderRadius: '10px', background: 'linear-gradient(135deg, #6c63ff, #a855f7)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '14px', color: '#fff', boxShadow: '0 4px 15px rgba(108,99,255,0.5)', flexShrink: 0 }}>AC</div>
           <div>
-            <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '17px', color: '#fff' }}>ACSIS</span>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '17px', color: '#fff' }}>ICACSIS</span>
             <span style={{ color: '#6c63ff', fontWeight: 700, fontSize: '17px' }}>-2026</span>
           </div>
         </Link>
