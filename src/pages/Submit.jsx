@@ -4,9 +4,9 @@ import { Send, CheckCircle, AlertCircle, ExternalLink, Info, FileText, ChevronRi
 
 // ── EMAILJS CONFIG ─────────────────────────────────────────────────
 // Get these from https://emailjs.com (see README for step-by-step)
-const EMAILJS_SERVICE_ID  = 'service_jvk9ud3';
-const EMAILJS_TEMPLATE_ID = 'template_5r67mmm';
-const EMAILJS_PUBLIC_KEY  = 'FCl0hSAy3uCOx0Xk-';
+const EMAILJS_SERVICE_ID  = 'service_7okw56o';
+const EMAILJS_TEMPLATE_ID = 'template_691t3p6';
+const EMAILJS_PUBLIC_KEY  = 'cj_Pe-vrnE65m43Kx';
 // ──────────────────────────────────────────────────────────────────
 
 // Google Form embed URL
